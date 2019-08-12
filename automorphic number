@@ -1,0 +1,23 @@
+n=int(input("Enter any number:"))
+sq=n**2
+x=len(str(n))
+i=0
+a=0
+rev=0
+rev2=0
+while i<=(x-1):
+  r=sq%10
+  rev=rev*10+r
+  sq=sq//10
+  i=i+1
+print(rev)
+while a<=(x-1):
+  r2=rev%10
+  rev2=rev2*10+r2
+  rev=rev//10
+  a=a+1
+print(rev2)
+if rev2==n:
+  print("It is an automorphic number.")
+else:
+  print("It is not an automorphic number.")
